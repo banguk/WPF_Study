@@ -1,2 +1,2 @@
-# WPF_Study
-WPF 기초 스터디
+# WPF Study
+## 스터디 기록
