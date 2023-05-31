@@ -29,3 +29,14 @@ Button으로 설정했음으로 이 Style은 Button에 적용된다.
 ```
 **Style="{StaticResource ButtonStyle}"** 를 보면 StaticResource에 등록 되어있는 ButtonStyle 라는 이름의 Style을 사용한다는 뜻이다.
 만약 style의 ```xml x:key=""``` 없이 TargetType만 있으면 전역에 있는 해당 컨트롤에 Style이 적용된다. 
+
+### <Setter>
+Setter는 원하는 Property의 값을 Set(지정, 설정) 하는 것이다.
+``` xml<Setter Property="Background" Value="Blue"/>``` 는 Background 라는 Property의 값(Value)를 Blue로 설정한다는 뜻이다.
+
+## Resources
+한 번이상 사용되기를 원하는 자원을 말한다고 한다.
+여러번 사용되길 원하는 것들을(예:Style) Resource에 등록해서 사용할 수 있다.
+Style을 사용할 때 App.Resource에 등록해서 사용하는 경우가 많은데 꼭 App.xaml에 파일에만 Resuorce를 등록할 수 있는 건 아니다.
+Button에도 StackPanel에도 있다. 다만 App.xaml이 최상위 객체이기 때문에 ```xml <Application.Resources> ``` 에 등록하면 전역에서 사용할 수 있다.
+즉 Resuorce를 사용할 때 상위객체에 있는 Resource는 다 사용할 수 있다.
